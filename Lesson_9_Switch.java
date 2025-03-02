@@ -52,6 +52,7 @@ public class Lesson_9_Switch {
     // changing variable value inside switch statement (Using java new switch)
     String newDay = "Sunday";
     String result = "";
+    String result_1 = "";
     switch (newDay) {
       case "Sunday" -> result = "Today is Sunday";
       case "Monday", "Tuesday", "Wednesday" -> result = "This is Meeting day"; // Here we are checking with multiple
@@ -61,7 +62,7 @@ public class Lesson_9_Switch {
 
     // Another way to do this
 
-    result = switch (newDay) { // here we are using yield keyword. It is similar to return keyword.
+    result_1 = switch (newDay) { // here we are using yield keyword. It is similar to return keyword.
       case "Sunday" -> {
         yield "Today is Sunday";
       }
@@ -84,6 +85,7 @@ public class Lesson_9_Switch {
         yield "No such day";
       }
     };
+    System.out.println(result);
 
   }
 

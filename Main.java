@@ -41,7 +41,7 @@ public class Main {
 
     // Call the printMessages method of the Inner class
     inner.printMessages(); // This will print messages from Outer, Middle, and Inner classes
-//  hallo check
+//  hallo check 
     // Using the static method from the Outer class
     Outer.outerStaticMethod(); // This will print: "This is a static method in the outer class."
   }
